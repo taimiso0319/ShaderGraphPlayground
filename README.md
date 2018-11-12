@@ -3,15 +3,15 @@
 ちらし寿司
 
 
-### 11.12 環境準備 
+### 11.12 環境準備 
 ***
 
 Package ManagerからShader Graphをインストールする。
 
-Shader GraphはScriptable Render Pipelineを使用しているので、初期状態からShader Graphで作ったマテリアルをセットすると、ピンクになってしまう。  
-Package Managerから[Lightweight Pipeline](https://blogs.unity3d.com/2018/02/21/the-lightweight-render-pipeline-optimizing-real-time-performance/])をインストールすることで解決。
+Shader GraphはScriptable Render Pipelineを使用しているので、初期状態からShader Graphで作ったマテリアルをセットすると、ピンクになってしまう。   
+Package Managerから[Lightweight Pipeline](https://blogs.unity3d.com/2018/02/21/the-lightweight-render-pipeline-optimizing-real-time-performance/])をインストールすることで解決。
 
-Built-In Pipelineから一部の機能を落として軽量化されているため、Realtime Global Illuminationなどは非対応となっているので注意。  
+Built-In Pipelineから一部の機能を落として軽量化されているため、Realtime Global Illuminationなどは非対応となっているので注意。  
 また、既存のシェーダーを利用したい場合は、自分でLightweight Pipeline用に書き直す必要がある。
 
 とりあえず、サイズ比較用のテクスチャを作って入れました。
