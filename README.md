@@ -2,8 +2,22 @@
 
 ちらし寿司
 
+### 11.14 紆余曲折
+***
+前回一部AssetStoreのファイルを利用しており、publicリポジトリに再配布はだめなので、テラシュールブログさんのAssetRequest.dllを使おう考えていた。（こちらは再配布はOKらしいので。）  
+しかし、AssetStoreのファイルを探す都合上URLが直書きで入っているが、最近AssetStoreのURLが変わった*ので、以前のURLでアクセスしようとすると、通常のブラウザならリダイレクトで最新のURLのほうに遷移する。  
+しかし、UnityのAssetStoreウィンドウだとリダイレクトされず、"オフラインだからオンラインにして接続してね☆ﾐ"のようなよくわからない説明が出てしまう。悲しい。  
 
-### 11.12 環境準備 
+今回は、一旦AssetRequest.dllの使用は取りやめて、Asset Storeから欲しい素材は最低限自分でダウンロードして触ることにし、基本的な素材は全部自分で作ろうと思う。そのためのCLIP Studio Paint Pro。  
+
+あと、一応AssetRequest.dll中身をCode Reflectを使ってざっと見てみたら、そんな難しいことしていなくて作れそうなので、多分現行に合わせてOSSで作ってみる。みたい。
+なので、中に入っているAssetRequestは僕が作り始めた奴です。気にしないでください。
+
+*URLの変更については以下の通り  
+以前: https&#58;//www.assetstore.unity3d.com/#!/content/`コンテンツID`  
+現在: https&#58;//assetstore.unity.com/packages/`メインカテゴリ`/`サブカテゴリ`/`コンテンツタイトル`-`コンテンツID`
+
+### 11.12 環境準備
 ***
 
 Package ManagerからShader Graphをインストールする。
@@ -15,7 +29,6 @@ Built-In Pipelineから一部の機能を落として軽量化されているた
 また、既存のシェーダーを利用したい場合は、自分でLightweight Pipeline用に書き直す必要がある。
 
 とりあえず、サイズ比較用のテクスチャを作って入れました。
-一部Skybox用のマテリアルはAsset Storeのものを使用しているので、[Unity-AssetRequest](http://tsubakit1.hateblo.jp/entry/2015/07/29/073000)を使ってインポートしてください。
 
 ### 注意
 --- 
